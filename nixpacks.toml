@@ -5,4 +5,4 @@ nixPkgs = ['hugo', 'caddy']
 cmds = ['hugo --baseURL=$RAILWAY_PUBLIC_DOMAIN']
 
 [phases.start]
-cmds = ['caddy file-server --root=public --listen=:3000']
+cmd = 'caddy file-server --root=public --listen=:3000'
